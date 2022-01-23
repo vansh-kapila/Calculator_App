@@ -57,6 +57,7 @@ body{
 	padding-left: 5%;
 	font-size: 6.9vmin;
 	overflow: hidden; 
+	letter-spacing:1.5px;
 } 
 #buttonWrap{
     height: 60%;
