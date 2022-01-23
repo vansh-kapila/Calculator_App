@@ -1,0 +1,174 @@
+@font-face {
+        font-family: 'digital-7';
+        src:url(digital-7.ttf);
+}
+body{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    display: flex;
+    min-width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    font-family:sans-serif; 
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.solar-screen{
+    margin-left: 60%;
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    background:linear-gradient( rgb(185, 206, 157),rgb(240, 245, 225));
+    height:5%;
+    align-items: right;
+    justify-content: right; 
+	box-shadow: 0px 0px 4px 4px rgba(29, 29, 29, 0.5);
+}
+#calculatorWrap {
+	height: 80vh;
+	width: 60vh;
+	background: linear-gradient(
+		to left,
+		rgb(68, 68, 68),
+		rgba(68, 68, 68, 0.9)
+	);
+	border-radius: 2rem; 
+	box-shadow: 0px 0px 5px 10px rgba(29, 29, 29, 0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    border:solid 5px rgb(41, 40, 40);
+}
+.display-screen {
+    font-family: digital-7; 
+	height: 11%;
+	width: 80%;
+	color: rgb(37, 37, 37);
+    background-color: rgb(181, 230, 176);
+    border: black solid 2px;
+	box-shadow: 0px 0px 0px 7px rgba(29, 29, 29, 0.5);
+	border-radius: 0.2rem;
+	margin-bottom: 7%;
+	display: flex;
+	align-items: center;
+	padding-left: 5%;
+	font-size: 6.9vmin;
+	overflow: hidden; 
+} 
+#buttonWrap{
+    height: 60%;
+	width: 90%;
+	display: grid;
+	grid-template-areas: "AC C Del divide" "btn7 btn8 btn9 multiplyy" "btn4 btn5 btn6 minus" "btn1 btn2 btn3 plus" "btn0 Dot equals plus";
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	place-items: center;
+}
+.calculator-btn {
+	display: grid;
+	place-items: center;
+	width: 80%;
+	height: 75%; 
+    border-radius: 0.2em 0.2em 0.2em 0.2em;
+    color:white; 
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 0px;
+    border-top: 1px solid rgb(255, 255, 255);
+	font-size: 4.5vmin;
+	font-weight: bold;
+	opacity: 0.8;
+	transition: opacity 0.3s, transform 0.1s;
+	cursor: pointer;
+    outline: 2px black solid;
+}
+.calculator-btn-num {
+	display: grid;
+	place-items: center;
+	width: 80%;
+	height: 75%; 
+    border-radius: 0.2em 0.2em 0.2em 0.2em;
+    color:white;
+	background: linear-gradient(to top, rgb(43, 42, 42), rgb(160, 160, 159));
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 0px;
+    border-top: 1px solid rgb(255, 255, 255);
+	font-size: 5.5vmin;
+	font-weight: bold;
+	opacity: 0.8;
+	transition: opacity 0.3s, transform 0.1s;
+	cursor: pointer;
+    position:relative;
+    margin:2px;
+    outline: 1.5px black solid;
+} 
+#btn0 {
+	grid-area: btn0;
+}
+#btn1 {
+	grid-area: btn1;
+}
+#btn2 {
+	grid-area: btn2;
+}
+#btn3 {
+	grid-area: btn3;
+}
+#btn4 {
+	grid-area: btn4;
+}
+#btn5 {
+	grid-area: btn5;
+}
+#btn6 {
+	grid-area: btn6;
+}
+#btn7 {
+	grid-area: btn7;
+}
+#btn8 {
+	grid-area: btn8;
+}
+#btn9 {
+	grid-area: btn9;
+}
+#btnPlus {
+	grid-area: plus;
+	height: 80%;
+	background: linear-gradient(to top, rgb(37, 37, 37), rgb(61, 61, 61));
+}
+#btnMinus {
+	grid-area: minus;
+	background: linear-gradient(to top, rgb(37, 37, 37), rgb(61, 61, 61));
+}
+#btnMultiply {
+	grid-area: multiplyy;
+	background: linear-gradient(to top, rgb(37, 37, 37), rgb(61, 61, 61));
+}
+#btnDivide {
+	grid-area: divide;
+	background: linear-gradient(to top, rgb(37, 37, 37), rgb(61, 61, 61));
+}
+#btnEquals {
+	grid-area: equals; 
+}
+#btnC {
+	grid-area: C;
+	background: linear-gradient(to top, rgb(180, 60, 60), rgb(224, 124, 146));
+}
+#btnDel {
+	grid-area: Del;
+	background: linear-gradient(to top, rgb(180, 60, 60), rgb(224, 124, 146));
+}
+#btnDot {
+	grid-area: Dot; 
+	position: relative;
+}
+#btnAC {
+	grid-area: AC;
+	position: relative; 
+	background: linear-gradient(to top, rgb(180, 60, 60), rgb(224, 124, 146));
+} 
+footer{
+    display: flex;
+}
